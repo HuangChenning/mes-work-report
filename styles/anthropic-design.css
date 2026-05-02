@@ -1,0 +1,148 @@
+/**
+ * Design System Inspired by Claude (Anthropic)
+ * 字体大小与 Apple 风格保持一致
+ */
+
+:root {
+  /* ==================== 颜色系统 ==================== */
+  
+  /* Primary */
+  --anthropic-black: #141413;
+  --terracotta: #c96442;
+  --coral: #d97757;
+  
+  /* Surface */
+  --parchment: #f5f4ed;
+  --ivory: #faf9f5;
+  --warm-sand: #e8e6dc;
+  --dark-surface: #30302e;
+  
+  /* Neutrals */
+  --charcoal-warm: #4d4c48;
+  --olive-gray: #5e5d59;
+  --stone-gray: #87867f;
+  --warm-silver: #b0aea5;
+  
+  /* Borders */
+  --border-cream: #f0eee6;
+  --border-warm: #e8e6dc;
+  
+  /* Semantic */
+  --error-crimson: #b53333;
+  
+  /* ==================== 排版系统 (Apple 风格字体大小) ==================== */
+  
+  --font-display: Georgia, 'Times New Roman', serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  
+  --font-hero-size: 32px;
+  --font-hero-weight: 500;
+  --font-hero-line-height: 1.2;
+  --font-hero-letter-spacing: 0;
+  
+  --font-section-size: 18px;
+  --font-section-weight: 500;
+  --font-section-line-height: 1.3;
+  
+  --font-card-size: 14px;
+  --font-card-weight: 500;
+  --font-card-line-height: 1.3;
+  
+  --font-body-size: 13px;
+  --font-body-weight: 400;
+  --font-body-line-height: 1.6;
+  
+  --font-caption-size: 12px;
+  --font-caption-weight: 400;
+  --font-caption-line-height: 1.4;
+  
+  --font-micro-size: 11px;
+  --font-micro-weight: 400;
+  --font-micro-line-height: 1.4;
+  
+  /* ==================== 间距系统 ==================== */
+  
+  --space-xs: 2px;
+  --space-sm: 4px;
+  --space-md: 5px;
+  --space-lg: 6px;
+  --space-xl: 7px;
+  --space-2: 8px;
+  --space-3: 9px;
+  --space-4: 10px;
+  --space-5: 11px;
+  --space-6: 14px;
+  --space-7: 15px;
+  --space-8: 17px;
+  --space-9: 20px;
+  --space-10: 24px;
+  --space-11: 28px;
+  --space-12: 32px;
+  
+  /* ==================== 圆角系统 ==================== */
+  
+  --radius-micro: 4px;
+  --radius-standard: 8px;
+  --radius-comfortable: 8px;
+  --radius-large: 12px;
+  --radius-pill: 12px;
+  --radius-circle: 50%;
+  
+  /* ==================== 布局系统 ==================== */
+  
+  --max-content-width: 980px;
+  
+  /* ==================== 报告专用变量 ==================== */
+  
+  --report-success: #34c759;
+  --report-warning: #ff9500;
+  --report-danger: #b53333;
+  --accent-primary: #c96442;
+  
+  /* ==================== Anthropic 特色 ==================== */
+  
+  --shadow-ring: 0px 0px 0px 1px;
+  --shadow-whisper: rgba(0,0,0,0.05) 0px 4px 24px;
+  
+  --bg-primary: #f5f4ed;
+  --bg-dark: #30302e;
+  --text-primary-light: #141413;
+  --text-secondary-light: #5e5d59;
+  --text-tertiary-light: #87867f;
+  --text-primary-dark: #141413;
+  --text-secondary-dark: #faf9f5;
+  
+  --surface-dark-1: #faf9f5;
+  --surface-dark-2: #e8e6dc;
+  --surface-dark-3: #30302e;
+  
+  --shadow-card: 0 2px 8px rgba(0,0,0,0.08);
+
+  /* ==================== 默认变量覆盖 ==================== */
+  /* 覆盖 default-design.css 中的变量，使报告 HTML 正确呈现 Anthropic 风格 */
+
+  --bg: #f5f4ed;
+  --card: #faf9f5;
+  --card-alt: #e8e6dc;
+  --accent: #c96442;
+  --red: #b53333;
+  --green: #34c759;
+  --orange: #ff9500;
+  --text: #141413;
+  --muted: #87867f;
+  --border: #e8e6dc;
+  --font: Georgia, 'Times New Roman', -apple-system, BlinkMacSystemFont, serif;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  /* 主题适配覆盖 */
+  --heading-text: #141413;
+  --table-hover: rgba(0, 0, 0, 0.03);
+  --table-even: rgba(0, 0, 0, 0.02);
+  --shadow-color: rgba(0, 0, 0, 0.08);
+
+  /* 热力图配色（温暖羊皮纸） */
+  --hm-0-bg: #e8e6dc; --hm-0-text: #87867f;
+  --hm-1-bg: #dcc8a8; --hm-1-text: #5a3e1b;
+  --hm-2-bg: #c9b89a; --hm-2-text: #3d2e10;
+  --hm-3-bg: #c96442; --hm-3-text: #ffffff;
+}

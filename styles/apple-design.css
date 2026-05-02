@@ -1,0 +1,309 @@
+/**
+ * Apple Design System Inspired CSS Variables
+ * 动态样式表 - 由 DESIGN.md 自动生成
+ * 如需更新样式，请同步修改 ~/Downloads/DESIGH.md
+ */
+
+:root {
+  /* ==================== 颜色系统 ==================== */
+
+  /* Primary 背景色 */
+  --bg-primary: #f5f5f7;
+  --bg-hero: #000000;
+  --bg-dark: #000000;
+  --bg-light: #f5f5f7;
+
+  /* 文字颜色 */
+  --text-primary-dark: #ffffff;
+  --text-primary-light: #1d1d1f;
+  --text-secondary-light: rgba(0, 0, 0, 0.8);
+  --text-tertiary-light: rgba(0, 0, 0, 0.48);
+
+  /* Apple Blue - 唯一强调色 */
+  --accent-primary: #0071e3;
+  --accent-link-light: #0066cc;
+  --accent-link-dark: #2997ff;
+  --accent-focus: #0071e3;
+
+  /* Dark Surface 层次 */
+  --surface-dark-1: #272729;
+  --surface-dark-2: #262628;
+  --surface-dark-3: #28282a;
+  --surface-dark-4: #2a2a2d;
+  --surface-dark-5: #242426;
+
+  /* Button 状态 */
+  --btn-active: #ededf2;
+  --btn-light: #fafafc;
+  --btn-overlay: rgba(210, 210, 215, 0.64);
+
+  /* Shadows */
+  --shadow-card: rgba(0, 0, 0, 0.22) 3px 5px 30px 0px;
+
+  /* ==================== 排版系统 ==================== */
+
+  /* Font Families */
+  --font-display: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-body: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  /* Display Hero - 32px, weight 700, line-height 1.2 */
+  --font-hero-size: 32px;
+  --font-hero-weight: 700;
+  --font-hero-line-height: 1.2;
+  --font-hero-letter-spacing: 0.5px;
+
+  /* Section Heading - 18px, weight 600, line-height 1.3 */
+  --font-section-size: 18px;
+  --font-section-weight: 600;
+  --font-section-line-height: 1.3;
+
+  /* Tile Heading - 20px, weight 400 */
+  --font-tile-size: 20px;
+  --font-tile-weight: 400;
+  --font-tile-line-height: 1.2;
+  --font-tile-letter-spacing: 0;
+
+  /* Card Title - 14px, weight 600 */
+  --font-card-size: 14px;
+  --font-card-weight: 600;
+  --font-card-line-height: 1.3;
+  --font-card-letter-spacing: 0;
+
+  /* Nav Heading - 24px, weight 600 */
+  --font-nav-size: 24px;
+  --font-nav-weight: 600;
+  --font-nav-line-height: 1.3;
+  --font-nav-letter-spacing: -0.2px;
+
+  /* Body - 13px, weight 400 */
+  --font-body-size: 13px;
+  --font-body-weight: 400;
+  --font-body-line-height: 1.5;
+  --font-body-letter-spacing: 0;
+
+  /* Body Emphasis - 13px, weight 600 */
+  --font-emphasis-size: 13px;
+  --font-emphasis-weight: 600;
+  --font-emphasis-line-height: 1.3;
+
+  /* Button - 13px, weight 500 */
+  --font-button-size: 13px;
+  --font-button-weight: 500;
+  --font-button-line-height: 1.5;
+
+  /* Link - 13px */
+  --font-link-size: 13px;
+  --font-link-weight: 500;
+  --font-link-line-height: 1.4;
+  --font-link-letter-spacing: 0;
+
+  /* Caption - 12px */
+  --font-caption-size: 12px;
+  --font-caption-weight: 400;
+  --font-caption-line-height: 1.3;
+  --font-caption-letter-spacing: 0;
+
+  /* Micro - 11px */
+  --font-micro-size: 11px;
+  --font-micro-weight: 400;
+  --font-micro-line-height: 1.3;
+  --font-micro-letter-spacing: 0;
+
+  /* ==================== 间距系统 ==================== */
+
+  --space-xs: 2px;
+  --space-sm: 4px;
+  --space-md: 5px;
+  --space-lg: 6px;
+  --space-xl: 7px;
+  --space-2: 8px;
+  --space-3: 9px;
+  --space-4: 10px;
+  --space-5: 11px;
+  --space-6: 14px;
+  --space-7: 15px;
+  --space-8: 17px;
+  --space-9: 20px;
+  --space-10: 24px;
+  --space-11: 28px;
+  --space-12: 32px;
+
+  /* ==================== 圆角系统 ==================== */
+
+  --radius-micro: 5px;
+  --radius-standard: 8px;
+  --radius-comfortable: 11px;
+  --radius-large: 12px;
+  --radius-pill: 980px;
+  --radius-circle: 50%;
+
+  /* ==================== 布局系统 ==================== */
+
+  --max-content-width: 980px;
+  --nav-height: 48px;
+
+  /* ==================== 报告专用变量 ==================== */
+
+  /* 报告特定颜色 */
+  --report-success: #34c759;
+  --report-warning: #ff9500;
+  --report-danger: #ff3b30;
+
+  /* 表格颜色 */
+  --table-header-bg: var(--surface-dark-1);
+  --table-header-text: var(--accent-primary);
+  --table-row-odd: rgba(255, 255, 255, 0.03);
+  --table-row-even: transparent;
+  --table-border: rgba(255, 255, 255, 0.08);
+
+  /* ==================== 默认变量覆盖 ==================== */
+  /* 覆盖 default-design.css 中的变量，使报告 HTML 正确呈现 Apple 风格 */
+
+  --bg: #f5f5f7;
+  --card: #ffffff;
+  --card-alt: rgba(0, 113, 227, 0.06);
+  --accent: #0071e3;
+  --red: #ff3b30;
+  --green: #34c759;
+  --orange: #ff9500;
+  --text: #1d1d1f;
+  --muted: rgba(0, 0, 0, 0.48);
+  --border: rgba(0, 0, 0, 0.08);
+  --font: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+  /* 主题适配覆盖 */
+  --heading-text: #1d1d1f;
+  --table-hover: rgba(0, 0, 0, 0.03);
+  --table-even: rgba(0, 0, 0, 0.02);
+  --shadow-color: rgba(0, 0, 0, 0.08);
+
+  /* 热力图配色（浅色主题） */
+  --hm-0-bg: #f3f4f6; --hm-0-text: #9ca3af;
+  --hm-1-bg: #fef3c7; --hm-1-text: #92400e;
+  --hm-2-bg: #bbf7d0; --hm-2-text: #065f46;
+  --hm-3-bg: #34c759; --hm-3-text: #ffffff;
+}
+
+/* ==================== 暗色主题适配 ==================== */
+
+.theme-dark {
+  --bg-primary: var(--bg-dark);
+  --text-primary-light: var(--text-primary-dark);
+  --text-secondary-light: rgba(255, 255, 255, 0.8);
+  --text-tertiary-light: rgba(255, 255, 255, 0.48);
+  --table-header-bg: var(--surface-dark-1);
+  --table-border: rgba(255, 255, 255, 0.1);
+  --table-row-odd: rgba(255, 255, 255, 0.02);
+}
+
+/* ==================== 辅助函数 ==================== */
+
+/* Flexbox 居中 */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Flexbox 垂直居中 */
+.flex-v-center {
+  display: flex;
+  align-items: center;
+}
+
+/* 卡片样式 */
+.card {
+  background: var(--bg-primary);
+  border-radius: var(--radius-standard);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-card);
+}
+
+.card-dark {
+  background: var(--surface-dark-1);
+  border-radius: var(--radius-standard);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-card);
+}
+
+/* Primary CTA */
+.btn-primary {
+  background: var(--accent-primary);
+  color: var(--text-primary-dark);
+  padding: 8px 15px;
+  border-radius: var(--radius-standard);
+  border: 1px solid transparent;
+  font-family: var(--font-body);
+  font-size: var(--font-button-size);
+  font-weight: var(--font-button-weight);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #0077ed;
+}
+
+.btn-primary:active {
+  background: var(--btn-active);
+}
+
+/* Pill Link */
+.btn-pill {
+  background: transparent;
+  color: var(--accent-link-light);
+  padding: 8px 15px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--accent-link-light);
+  font-family: var(--font-body);
+  font-size: var(--font-link-size);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-pill:hover {
+  text-decoration: underline;
+}
+
+/* Focus Ring */
+:focus-visible {
+  outline: 2px solid var(--accent-focus);
+  outline-offset: 2px;
+}
+
+/* ==================== 响应式断点 ==================== */
+
+@media (max-width: 360px) {
+  :root {
+    --font-hero-size: 40px;
+    --font-section-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-hero-size: 44px;
+    --font-section-size: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --font-hero-size: 48px;
+    --font-section-size: 36px;
+  }
+}
+
+@media (max-width: 834px) {
+  :root {
+    --font-hero-size: 52px;
+    --font-section-size: 38px;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --max-content-width: 1200px;
+  }
+}

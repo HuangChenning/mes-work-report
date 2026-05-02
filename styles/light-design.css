@@ -1,0 +1,489 @@
+/**
+ * 浅色商务风格 CSS
+ * 浅蓝背景 + 蓝色渐变 header + 白色卡片
+ */
+
+:root {
+  --bg: #f0f4f8;
+  --card: #ffffff;
+  --card-alt: #f8fafc;
+  --accent: #2563eb;
+  --accent-dark: #1e3a5f;
+  --red: #ef4444;
+  --green: #10b981;
+  --orange: #f59e0b;
+  --text: #1f2937;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+  --border-light: #f3f4f6;
+
+  --font: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --font-hero: 24px;
+  --font-section: 18px;
+  --font-body: 13px;
+  --font-caption: 12px;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-lg: 0 4px 12px rgba(0,0,0,0.15);
+
+  --heading-text: #1e3a5f;
+  --shadow-color: rgba(0,0,0,0.06);
+
+  --hm-0-bg: #f3f4f6; --hm-0-text: #9ca3af;
+  --hm-1-bg: #fef3c7; --hm-1-text: #92400e;
+  --hm-2-bg: #d1fae5; --hm-2-text: #065f46;
+  --hm-3-bg: #10b981; --hm-3-text: #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  font-size: var(--font-body);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* === Header === */
+.header {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+  color: white;
+  padding: 32px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-lg);
+}
+
+.header h1 {
+  font-size: var(--font-hero);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.header p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.header-badges {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+/* === 目录导航 === */
+.nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(135deg, #1e293b, #334155);
+  padding: 12px 24px;
+  border-radius: 12px;
+  margin: 16px 0 24px;
+  box-shadow: var(--shadow-lg);
+}
+
+.nav-title {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.nav-link {
+  color: #e2e8f0;
+  text-decoration: none;
+  padding: 6px 14px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 8px;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+
+.nav-link:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* === 章节 === */
+.section {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow);
+}
+
+.section-title {
+  font-size: var(--font-section);
+  font-weight: 700;
+  color: var(--accent-dark);
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-title .icon {
+  font-size: 20px;
+}
+
+.section-header {
+  font-size: 15px;
+  font-weight: 600;
+  color: #374151;
+  margin: 16px 0 10px;
+  padding-left: 8px;
+  border-left: 3px solid var(--accent);
+}
+
+/* === 统计卡片 === */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: var(--card-alt);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  text-align: center;
+}
+
+.stat-label {
+  font-size: var(--font-caption);
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.stat-value.success { color: var(--green); }
+.stat-value.warning { color: var(--orange); }
+.stat-value.danger { color: var(--red); }
+
+.stat-sub {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* === 团队卡片 === */
+.team-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .team-cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 500px) {
+  .team-cards { grid-template-columns: 1fr; }
+}
+
+.team-card {
+  background: var(--card-alt);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  border-left: 4px solid var(--accent);
+}
+
+.team-card h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.team-stat {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: var(--font-caption);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.team-stat:last-child { border-bottom: none; }
+.team-stat .value { color: var(--accent); font-weight: 600; }
+
+/* === 徽章 === */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.badge-success { background: #d1fae5; color: #065f46; }
+.badge-warning { background: #fef3c7; color: #92400e; }
+.badge-danger { background: #fee2e2; color: #991b1b; }
+.badge-info { background: #dbeafe; color: #1d4ed8; }
+
+/* === 标签 === */
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  margin: 1px;
+}
+.tag-pre { background: #dbeafe; color: #1d4ed8; }
+.tag-after { background: #d1fae5; color: #065f46; }
+.tag-internal { background: #e0e7ff; color: #3730a3; }
+.tag-ot { background: #fce7f3; color: #9d174d; }
+
+/* === 表格 === */
+.table-scroll {
+  overflow-x: auto;
+  margin-top: 12px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-body);
+}
+
+.data-table th {
+  background: var(--card-alt);
+  color: #374151;
+  font-weight: 600;
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 2px solid var(--border);
+  white-space: nowrap;
+}
+
+.data-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.data-table tr:hover td { background: var(--card-alt); }
+
+.data-table .col-num { text-align: center; width: 70px; white-space: nowrap; }
+.data-table .col-name { max-width: 90px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.data-table .col-date { width: 100px; }
+.data-table .col-city { max-width: 80px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.data-table .col-team { max-width: 100px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.data-table .col-rank { width: 40px; text-align: center; }
+
+/* === 热力图 === */
+.heatmap {
+  background: var(--card-alt);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  margin-top: 12px;
+}
+
+.heatmap-title {
+  font-size: var(--font-caption);
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.heatmap-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.heatmap-row {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.heatmap-name {
+  width: 90px;
+  min-width: 70px;
+  font-size: var(--font-caption);
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.heatmap-cell {
+  flex: 1;
+  min-width: 50px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.hm-0 { background: var(--hm-0-bg); color: var(--hm-0-text); }
+.hm-1 { background: var(--hm-1-bg); color: var(--hm-1-text); }
+.hm-2 { background: var(--hm-2-bg); color: var(--hm-2-text); }
+.hm-3 { background: var(--hm-3-bg); color: var(--hm-3-text); }
+
+/* === 进度条 === */
+.progress {
+  background: #e5e7eb;
+  border-radius: 6px;
+  height: 10px;
+  overflow: hidden;
+  width: 120px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 6px;
+}
+
+/* === 提示框 === */
+.alert {
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 12px;
+}
+
+.alert-success { background: #d1fae5; border-left: 3px solid var(--green); color: #065f46; }
+.alert-warning { background: #fef3c7; border-left: 3px solid var(--orange); color: #92400e; }
+.alert-danger { background: #fee2e2; border-left: 3px solid var(--red); color: #991b1b; }
+
+/* === 排名 === */
+.rank-1 { color: #fbbf24 !important; font-weight: 700; }
+.rank-2 { color: #9ca3af !important; font-weight: 700; }
+.rank-3 { color: #b45309 !important; font-weight: 700; }
+
+/* === 周报卡片 === */
+.report-card {
+  background: var(--card-alt);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  margin: 8px 0;
+  border-left: 3px solid var(--accent);
+}
+
+.report-card h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.report-meta {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.report-content {
+  font-size: var(--font-body);
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* === 项目未报工 === */
+.contract-card {
+  background: var(--card-alt);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  margin: 8px 0;
+  border-left: 3px solid var(--orange);
+}
+
+.contract-card h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.contract-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+  font-size: var(--font-caption);
+  margin-bottom: 12px;
+}
+
+/* === 页脚 === */
+.footer {
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-muted);
+  padding: 24px;
+  border-top: 1px solid var(--border);
+  margin-top: 24px;
+}
+
+/* === 两列布局 === */
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 700px) {
+  .grid2 { grid-template-columns: 1fr; }
+}
+
+/* === 服务请求统计卡片（区分颜色）=== */
+.stat-block {
+  background: var(--card-alt);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+}
+
+.stat-block.company {
+  border-left: 4px solid #3b82f6;  /* 蓝色 - 按客户 */
+}
+
+.stat-block.executor {
+  border-left: 4px solid #10b981;  /* 绿色 - 按处理人 */
+}
+
+.stat-block-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stat-block-title .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.stat-block.company .dot { background: #3b82f6; }
+.stat-block.executor .dot { background: #10b981; }
+
+.stat-block.company .section-header { border-color: #3b82f6; color: #1d4ed8; }
+.stat-block.executor .section-header { border-color: #10b981; color: #065f46; }

@@ -1,0 +1,151 @@
+/**
+ * Design System Inspired by Starbucks
+ * 字体大小与 Apple 风格保持一致
+ */
+
+:root {
+  /* ==================== 颜色系统 ==================== */
+  
+  /* Primary Greens */
+  --starbucks-green: #006241;
+  --green-accent: #00754A;
+  --house-green: #1E3932;
+  --green-uplift: #2b5148;
+  --green-light: #d4e9e2;
+  
+  /* Accent */
+  --gold: #cba258;
+  --gold-light: #dfc49d;
+  --gold-lightest: #faf6ee;
+  
+  /* Surface */
+  --cream: #f2f0eb;
+  --ceramic: #edebe9;
+  --white: #ffffff;
+  
+  /* Text */
+  --text-black: rgba(0, 0, 0, 0.87);
+  --text-black-soft: rgba(0, 0, 0, 0.58);
+  --text-white: #ffffff;
+  --text-white-soft: rgba(255, 255, 255, 0.70);
+  
+  /* Semantic */
+  --error-red: #c82014;
+  
+  /* ==================== 排版系统 (Apple 风格字体大小) ==================== */
+  
+  --font-display: 'SoDoSans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-body: 'SoDoSans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  
+  --font-hero-size: 32px;
+  --font-hero-weight: 600;
+  --font-hero-line-height: 1.2;
+  --font-hero-letter-spacing: 0.5px;
+  
+  --font-section-size: 18px;
+  --font-section-weight: 600;
+  --font-section-line-height: 1.3;
+  
+  --font-card-size: 14px;
+  --font-card-weight: 600;
+  --font-card-line-height: 1.3;
+  
+  --font-body-size: 13px;
+  --font-body-weight: 400;
+  --font-body-line-height: 1.5;
+  
+  --font-caption-size: 12px;
+  --font-caption-weight: 400;
+  --font-caption-line-height: 1.3;
+  
+  --font-micro-size: 11px;
+  --font-micro-weight: 400;
+  --font-micro-line-height: 1.3;
+  
+  /* ==================== 间距系统 ==================== */
+  
+  --space-xs: 2px;
+  --space-sm: 4px;
+  --space-md: 5px;
+  --space-lg: 6px;
+  --space-xl: 7px;
+  --space-2: 8px;
+  --space-3: 9px;
+  --space-4: 10px;
+  --space-5: 11px;
+  --space-6: 14px;
+  --space-7: 15px;
+  --space-8: 17px;
+  --space-9: 20px;
+  --space-10: 24px;
+  --space-11: 28px;
+  --space-12: 32px;
+  
+  /* ==================== 圆角系统 ==================== */
+  
+  --radius-micro: 5px;
+  --radius-standard: 8px;
+  --radius-comfortable: 11px;
+  --radius-large: 12px;
+  --radius-pill: 50px;
+  --radius-circle: 50%;
+  
+  /* ==================== 布局系统 ==================== */
+  
+  --max-content-width: 980px;
+  
+  /* ==================== 报告专用变量 ==================== */
+  
+  --report-success: #34c759;
+  --report-warning: #ff9500;
+  --report-danger: #ff3b30;
+  --accent-primary: #00754A;
+  
+  /* ==================== Starbucks 特色 ==================== */
+  
+  --shadow-card: 0 0 0.5px rgba(0,0,0,0.14), 0 1px 1px rgba(0,0,0,0.24);
+  --shadow-light: rgba(0, 0, 0, 0.08);
+  --shadow-medium: rgba(0, 0, 0, 0.16);
+  
+  --bg-primary: #f2f0eb;
+  --text-primary-light: rgba(0, 0, 0, 0.87);
+  --text-secondary-light: rgba(0, 0, 0, 0.58);
+  --text-tertiary-light: rgba(0, 0, 0, 0.45);
+
+  /* 深色主题变量（用于 hero 等区域） */
+  --bg-dark: #1E3932;
+  --text-primary-dark: #ffffff;
+  --text-secondary-dark: rgba(255, 255, 255, 0.7);
+  --text-tertiary-dark: rgba(255, 255, 255, 0.5);
+
+  --surface-dark-1: #1E3932;
+  --surface-dark-2: #2b5148;
+
+  /* ==================== 默认变量覆盖 ==================== */
+  /* 覆盖 default-design.css 中的变量，使报告 HTML 正确呈现 Starbucks 风格 */
+
+  --bg: #f2f0eb;
+  --card: #ffffff;
+  --card-alt: #edebe9;
+  --accent: #006241;
+  --red: #c82014;
+  --green: #00754A;
+  --orange: #cba258;
+  --text: rgba(0, 0, 0, 0.87);
+  --muted: rgba(0, 0, 0, 0.58);
+  --border: rgba(0, 0, 0, 0.08);
+  --font: 'SoDoSans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+  /* 主题适配覆盖 */
+  --heading-text: rgba(0, 0, 0, 0.87);
+  --table-hover: rgba(0, 0, 0, 0.03);
+  --table-even: rgba(0, 0, 0, 0.02);
+  --shadow-color: rgba(0, 0, 0, 0.08);
+
+  /* 热力图配色（浅绿主题） */
+  --hm-0-bg: #edebe9; --hm-0-text: #9a9590;
+  --hm-1-bg: #d4e9e2; --hm-1-text: #004234;
+  --hm-2-bg: #a8d8c4; --hm-2-text: #003d2e;
+  --hm-3-bg: #006241; --hm-3-text: #ffffff;
+}

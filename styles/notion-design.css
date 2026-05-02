@@ -1,0 +1,148 @@
+/**
+ * Design System Inspired by Notion
+ * 字体大小与 Apple 风格保持一致
+ */
+
+:root {
+  /* ==================== 颜色系统 ==================== */
+  
+  /* Primary */
+  --notion-black: rgba(0, 0, 0, 0.95);
+  --notion-white: #ffffff;
+  --notion-blue: #0075de;
+  --deep-navy: #213183;
+  --active-blue: #005bab;
+  
+  /* Warm Neutrals */
+  --warm-white: #f6f5f4;
+  --warm-dark: #31302e;
+  --warm-gray-500: #615d59;
+  --warm-gray-300: #a39e98;
+  
+  /* Semantic */
+  --teal: #2a9d99;
+  --green: #1aae39;
+  --orange: #dd5b00;
+  
+  /* Interactive */
+  --link-light-blue: #62aef0;
+  --focus-blue: #097fe8;
+  --badge-blue-bg: #f2f9ff;
+  --badge-blue-text: #097fe8;
+  
+  /* ==================== 排版系统 (Apple 风格字体大小) ==================== */
+  
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  
+  --font-hero-size: 32px;
+  --font-hero-weight: 700;
+  --font-hero-line-height: 1.2;
+  --font-hero-letter-spacing: -0.5px;
+  
+  --font-section-size: 18px;
+  --font-section-weight: 700;
+  --font-section-line-height: 1.3;
+  
+  --font-card-size: 14px;
+  --font-card-weight: 700;
+  --font-card-line-height: 1.3;
+  
+  --font-body-size: 13px;
+  --font-body-weight: 400;
+  --font-body-line-height: 1.5;
+  
+  --font-caption-size: 12px;
+  --font-caption-weight: 500;
+  --font-caption-line-height: 1.3;
+  
+  --font-micro-size: 11px;
+  --font-micro-weight: 400;
+  --font-micro-line-height: 1.3;
+  
+  /* ==================== 间距系统 ==================== */
+  
+  --space-xs: 2px;
+  --space-sm: 4px;
+  --space-md: 5px;
+  --space-lg: 6px;
+  --space-xl: 7px;
+  --space-2: 8px;
+  --space-3: 9px;
+  --space-4: 10px;
+  --space-5: 11px;
+  --space-6: 14px;
+  --space-7: 15px;
+  --space-8: 17px;
+  --space-9: 20px;
+  --space-10: 24px;
+  --space-11: 28px;
+  --space-12: 32px;
+  
+  /* ==================== 圆角系统 ==================== */
+  
+  --radius-micro: 4px;
+  --radius-standard: 6px;
+  --radius-comfortable: 8px;
+  --radius-large: 12px;
+  --radius-pill: 9999px;
+  --radius-circle: 50%;
+  
+  /* ==================== 布局系统 ==================== */
+  
+  --max-content-width: 980px;
+  
+  /* ==================== 报告专用变量 ==================== */
+  
+  --report-success: #1aae39;
+  --report-warning: #dd5b00;
+  --report-danger: #e03e3e;
+  --accent-primary: #0075de;
+  
+  /* ==================== Notion 特色 ==================== */
+  
+  --shadow-card: 0px 4px 18px rgba(0,0,0,0.04), 0px 2.025px 7.84688px rgba(0,0,0,0.027), 0px 0.8px 2.925px rgba(0,0,0,0.02);
+  --whisper-border: 1px solid rgba(0,0,0,0.1);
+  
+  --bg-primary: #ffffff;
+  --text-primary-light: rgba(0, 0, 0, 0.95);
+  --text-secondary-light: rgba(0, 0, 0, 0.65);
+  --text-tertiary-light: rgba(0, 0, 0, 0.45);
+
+  /* 深色主题变量（用于 hero 等区域） */
+  --bg-dark: #213183;
+  --text-primary-dark: #ffffff;
+  --text-secondary-dark: rgba(255, 255, 255, 0.7);
+  --text-tertiary-dark: rgba(255, 255, 255, 0.5);
+
+  --surface-dark-1: #213183;
+  --surface-dark-2: #2a4191;
+
+  /* ==================== 默认变量覆盖 ==================== */
+  /* 覆盖 default-design.css 中的变量，使报告 HTML 正确呈现 Notion 风格 */
+
+  --bg: #ffffff;
+  --card: #f6f5f4;
+  --card-alt: #f2f9ff;
+  --accent: #0075de;
+  --red: #e03e3e;
+  --green: #1aae39;
+  --orange: #dd5b00;
+  --text: rgba(0, 0, 0, 0.95);
+  --muted: rgba(0, 0, 0, 0.45);
+  --border: rgba(0, 0, 0, 0.1);
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  --shadow: 0px 4px 18px rgba(0, 0, 0, 0.04);
+
+  /* 主题适配覆盖 */
+  --heading-text: rgba(0, 0, 0, 0.95);
+  --table-hover: rgba(0, 0, 0, 0.03);
+  --table-even: rgba(0, 0, 0, 0.02);
+  --shadow-color: rgba(0, 0, 0, 0.06);
+
+  /* 热力图配色（极简浅色） */
+  --hm-0-bg: #f0eeec; --hm-0-text: #a39e98;
+  --hm-1-bg: #fef3c7; --hm-1-text: #713f12;
+  --hm-2-bg: #d1fae5; --hm-2-text: #065f46;
+  --hm-3-bg: #0075de; --hm-3-text: #ffffff;
+}
